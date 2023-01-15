@@ -1,27 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Book } from './models/Book';
-import { preloadedBooks } from './core/mock';
+import { Component } from '@angular/core';
+import { Book } from './models/books.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+  title = 'Books';
 
-  title = "Awesome book App";
-  Books = preloadedBooks();
-  previewMode : boolean  = true;
+ 
 
-  constructor() {
-
-  }
-  ngOnInit(): void {
-
-  }
-
-
-  onClickImage(){
-
-  }
+ 
 }
